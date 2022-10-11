@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'IM Fell English SC', serif;
+}
+
+#parchment {
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  width: 90%;
+  height: 85%;
+  top: 0%; left: 50%; transform: translate(-50%, 0);
+  padding: 4em;
+  box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+  background: #fffef0;
+  filter: url(#wavy2);
+}
+
+.spiderWeb img{
+  width: 25vw;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.skull img{
+  width: 5vw;
+  
+}
+
+.moon img{
+  width: 25vw;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.cemetery img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  bottom: -40px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.RSVPform form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.RSVPform button {
+  display: flex;
+  width: fit-content;
+}
+
+form input, form textarea {
+  border-radius: 5px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 50vw;
+}
+
+.App hr {
+  width: 40vw;
+}
+
+footer {
+  float: left;
+  bottom: 0;
+  position: absolute;
+}
