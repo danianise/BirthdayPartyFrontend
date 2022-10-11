@@ -76,6 +76,10 @@ footer {
   position: absolute;
 }
 
+.description {
+  margin-top: -20px;
+}
+
 @media (max-width: 940px) {
   .skull img{
     width: 10vw;
