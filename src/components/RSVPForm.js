@@ -15,38 +15,19 @@ function RSVPForm() {
         setFormState({ ...formState, [event.target.id]: event.target.value })
     }
 
-    function getCookie(name) {
-        let cookieValue = null;
-        if (document.cookie && document.cookie !== '') {
-            const cookies = document.cookie.split(';');
-            for (let i = 0; i < cookies.length; i++) {
-                const cookie = cookies[i].trim();
-                // Does this cookie string begin with the name we want?
-                if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                    break;
-                }
-            }
-        }
-        return cookieValue;
-    }
-    const csrftoken = getCookie('csrftoken');
-
     const handleSubmit = event => {
         event.preventDefault()
-        //do something with the data in the component state
+        
         console.log(formState)
 
-        const url = 'http://localhost:8000/responses/'
+        // const url = 'http://localhost:8000/responses/'
+        const url = 'https://still-crag-67130.herokuapp.com/responses/'
         const options = {
             method: 'POST',
             headers: {
-                'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-CSRFToken': csrftoken
             },
             body: JSON.stringify(formState),
-            // credentials : 'include'
         }
 
         fetch(url, options)
@@ -70,9 +51,6 @@ function RSVPForm() {
     <div className='RSVPform'>
         <h1>Join us if you DARE</h1>
         <form onSubmit={handleSubmit}>
-            {/* <label htmlFor='name'>
-                Your Name:
-            </label> */}
             <input
                 placeholder='Your Name'
                 id='name'
@@ -82,9 +60,6 @@ function RSVPForm() {
             />
             <br />
 
-            {/* <label htmlFor='guestCount'>
-                How many people will be coming? <br /> (include yourself!)
-            </label> */}
             <input
                 placeholder="How many people will be coming?"
                 id='guest_count'
@@ -94,7 +69,6 @@ function RSVPForm() {
             />
             <br />
 
-            {/* <label htmlFor='message'>Leave a Message for the Hoeys:</label> */}
             <textarea
               id='message'
               placeholder='Leave a Message for the Hoeys (Optional)'

@@ -16,10 +16,11 @@ function DeclineForm() {
 
     const handleSubmit = event => {
         event.preventDefault()
-        //do something with the data in the component state
+        
         console.log(formState)
 
-        const url = 'http://localhost:8000/declines/'
+        // const url = 'http://localhost:8000/declines/'
+        const url = 'https://still-crag-67130.herokuapp.com/declines/'
         const options = {
             method: 'POST',
             headers: {
