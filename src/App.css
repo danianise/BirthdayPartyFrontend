@@ -78,9 +78,12 @@ footer {
 
 @media (max-width: 940px) {
   .skull img{
-    width: 25vw;
+    width: 10vw;
   }
   footer {
     font-size: small;
+  }
+  .App {
+    font-size: 15px;
   }
 }
