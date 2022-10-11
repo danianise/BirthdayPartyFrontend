@@ -75,3 +75,12 @@ footer {
   bottom: 0;
   position: absolute;
 }
+
+@media (max-width: 940px) {
+  .skull img{
+    width: 25vw;
+  }
+  footer {
+    font-size: small;
+  }
+}
