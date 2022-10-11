@@ -14,9 +14,9 @@ function App() {
 
   return (
     <div className="App">
-      <Background />
+      {/* <Background /> */}
       <Images />
-      
+
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/accepted' element={<YesConfirmation />} />

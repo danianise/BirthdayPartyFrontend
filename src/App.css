@@ -1,23 +1,26 @@
 .App {
   text-align: center;
-  padding-top: 20px;
   font-family: 'IM Fell English SC', serif;
   height: 100vh;
   width: 100vw;
+  background: url('../public/parchment.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
-#parchment {
+/* #parchment {
   z-index: -1;
   position: absolute;
   display: flex;
   width: 100vw;
   height: 85%;
-  top: 0%; left: 50%; transform: translate(-50%, 0);
+  top: 0%; 
+  left: 50%; 
+  transform: translate(-50%, 0);
   padding: 4em;
   box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
   background: #fffef0;
   filter: url(#wavy2);
-}
+} */
 
 .spiderWeb img{
   width: 25vw;
@@ -28,6 +31,7 @@
 
 .skull img{
   width: 5vw;
+  margin-top: 10px;
   
 }
 
@@ -36,14 +40,14 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  z-index: -1;
+  z-index: 0;
   opacity: 0.8;
 }
 
 .cemetery img {
   width: 100%;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   /* bottom: -40px; */
   bottom: 0;
   margin-bottom: 0;
@@ -79,8 +83,14 @@ footer {
   position: absolute;
 }
 
-.description {
+.Main {
   margin-top: -20px;
+  z-index: 1;
+  padding-top: 20px;
+}
+
+button {
+  opacity: 0.9;
 }
 
 @media (max-width: 940px) {

@@ -19,7 +19,7 @@ function Main() {
 
 
   return (
-    <div className='App'>
+    <div className='Main'>
       {showResponseForm || showDeclineForm 
         ? ""
         : <div className='description'>
