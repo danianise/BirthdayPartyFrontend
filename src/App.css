@@ -71,6 +71,7 @@ form input, form textarea {
   border-radius: 5px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   width: 50vw;
+  opacity: .9
 }
 
 .App hr {
