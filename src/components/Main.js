@@ -28,7 +28,6 @@ function Main() {
             <h3>costumes encouraged</h3>
             <hr />
             <h2>Saturday, November 5 at Noon</h2>
-            <h2>102 Pratt St<br />Lunenburg, MA</h2>
           </div>
       }
           <h2>Please<br />
